@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		421343272AB775F400DDA3A2 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421343262AB775F400DDA3A2 /* Accelerate.framework */; };
+		421343292AB77ECF00DDA3A2 /* DragHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421343282AB77ECF00DDA3A2 /* DragHelper.swift */; };
+		4223AC862AB8831B0028BAAC /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4223AC852AB8831B0028BAAC /* Models.swift */; };
+		4243652A2AB4E8BC00C3EF55 /* splat_utils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 424365292AB4E8BC00C3EF55 /* splat_utils.mm */; };
+		4243652D2AB5021500C3EF55 /* Satin in Frameworks */ = {isa = PBXBuildFile; productRef = 4243652C2AB5021500C3EF55 /* Satin */; };
+		4243652F2AB5021500C3EF55 /* SatinCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4243652E2AB5021500C3EF55 /* SatinCore */; };
+		424365312AB502F400C3EF55 /* SplatSimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424365302AB502F400C3EF55 /* SplatSimpleView.swift */; };
+		424365342AB503E500C3EF55 /* Forge in Frameworks */ = {isa = PBXBuildFile; productRef = 424365332AB503E500C3EF55 /* Forge */; };
+		424E67752AB495E0007DE614 /* SplatShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 424E67742AB495E0007DE614 /* SplatShaders.metal */; };
+		4263EA7C2AB8AD90001EE430 /* mic_60k.ply in Resources */ = {isa = PBXBuildFile; fileRef = 4263EA7B2AB8AD90001EE430 /* mic_60k.ply */; };
+		429289BF2AB9097200318B9C /* lego_60k.ply in Resources */ = {isa = PBXBuildFile; fileRef = 429289BE2AB9097200318B9C /* lego_60k.ply */; };
+		42D75AAB2AB24FB500E6BA61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D75AAA2AB24FB500E6BA61 /* AppDelegate.swift */; };
+		42D75AB52AB24FB500E6BA61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42D75AB32AB24FB500E6BA61 /* Main.storyboard */; };
+		42D75AB72AB24FB800E6BA61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D75AB62AB24FB800E6BA61 /* Assets.xcassets */; };
+		42D75ABA2AB24FB800E6BA61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42D75AB82AB24FB800E6BA61 /* LaunchScreen.storyboard */; };
+		42D75AC32AB3485500E6BA61 /* MetalBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D75AC22AB3485500E6BA61 /* MetalBuffer.swift */; };
+		42D75AC52AB3499500E6BA61 /* SplatCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D75AC42AB3499500E6BA61 /* SplatCloud.swift */; };
+		42F4B0442AB602A700C0D69D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F4B0432AB602A700C0D69D /* MainViewController.swift */; };
+		42F4B0482AB6030E00C0D69D /* ARBackgroundRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F4B0462AB6030D00C0D69D /* ARBackgroundRenderer.swift */; };
+		42F4B0492AB6030E00C0D69D /* ARPerspectiveCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F4B0472AB6030E00C0D69D /* ARPerspectiveCamera.swift */; };
+		42F4B04B2AB6036400C0D69D /* Metal+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F4B04A2AB6036400C0D69D /* Metal+Extensions.swift */; };
+		42F4B04D2AB604C500C0D69D /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 42F4B04C2AB604C500C0D69D /* Assets */; };
+		42F4B04F2AB60F5300C0D69D /* ARSplatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F4B04E2AB60F5300C0D69D /* ARSplatView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		421343262AB775F400DDA3A2 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		421343282AB77ECF00DDA3A2 /* DragHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragHelper.swift; sourceTree = "<group>"; };
+		4223AC852AB8831B0028BAAC /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		424365282AB4E81100C3EF55 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		424365292AB4E8BC00C3EF55 /* splat_utils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = splat_utils.mm; sourceTree = "<group>"; };
+		424365302AB502F400C3EF55 /* SplatSimpleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplatSimpleView.swift; sourceTree = "<group>"; };
+		424E67742AB495E0007DE614 /* SplatShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SplatShaders.metal; sourceTree = "<group>"; };
+		4263EA7B2AB8AD90001EE430 /* mic_60k.ply */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mic_60k.ply; sourceTree = "<group>"; };
+		429289BE2AB9097200318B9C /* lego_60k.ply */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lego_60k.ply; sourceTree = "<group>"; };
+		42D75AA72AB24FB500E6BA61 /* MetalSplat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalSplat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42D75AAA2AB24FB500E6BA61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		42D75AAC2AB24FB500E6BA61 /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		42D75AB42AB24FB500E6BA61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		42D75AB62AB24FB800E6BA61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42D75AB92AB24FB800E6BA61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		42D75AC22AB3485500E6BA61 /* MetalBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalBuffer.swift; sourceTree = "<group>"; };
+		42D75AC42AB3499500E6BA61 /* SplatCloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplatCloud.swift; sourceTree = "<group>"; };
+		42F4B0432AB602A700C0D69D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		42F4B0462AB6030D00C0D69D /* ARBackgroundRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARBackgroundRenderer.swift; sourceTree = "<group>"; };
+		42F4B0472AB6030E00C0D69D /* ARPerspectiveCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARPerspectiveCamera.swift; sourceTree = "<group>"; };
+		42F4B04A2AB6036400C0D69D /* Metal+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Metal+Extensions.swift"; sourceTree = "<group>"; };
+		42F4B04C2AB604C500C0D69D /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
+		42F4B04E2AB60F5300C0D69D /* ARSplatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSplatView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42D75AA42AB24FB500E6BA61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				424365342AB503E500C3EF55 /* Forge in Frameworks */,
+				421343272AB775F400DDA3A2 /* Accelerate.framework in Frameworks */,
+				4243652D2AB5021500C3EF55 /* Satin in Frameworks */,
+				4243652F2AB5021500C3EF55 /* SatinCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		421343252AB775F300DDA3A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				421343262AB775F400DDA3A2 /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4223AC842AB882EC0028BAAC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4223AC852AB8831B0028BAAC /* Models.swift */,
+				429289BE2AB9097200318B9C /* lego_60k.ply */,
+				4263EA7B2AB8AD90001EE430 /* mic_60k.ply */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		42D75A9E2AB24FB500E6BA61 = {
+			isa = PBXGroup;
+			children = (
+				42D75AA92AB24FB500E6BA61 /* MetalSplat */,
+				42D75AA82AB24FB500E6BA61 /* Products */,
+				421343252AB775F300DDA3A2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		42D75AA82AB24FB500E6BA61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42D75AA72AB24FB500E6BA61 /* MetalSplat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42D75AA92AB24FB500E6BA61 /* MetalSplat */ = {
+			isa = PBXGroup;
+			children = (
+				42D75AAA2AB24FB500E6BA61 /* AppDelegate.swift */,
+				42F4B0432AB602A700C0D69D /* MainViewController.swift */,
+				42D75AC42AB3499500E6BA61 /* SplatCloud.swift */,
+				424365302AB502F400C3EF55 /* SplatSimpleView.swift */,
+				42F4B04E2AB60F5300C0D69D /* ARSplatView.swift */,
+				424E67742AB495E0007DE614 /* SplatShaders.metal */,
+				42D75AAC2AB24FB500E6BA61 /* ShaderTypes.h */,
+				424365282AB4E81100C3EF55 /* BridgingHeader.h */,
+				42F4B04C2AB604C500C0D69D /* Assets */,
+				42F4B0452AB602F000C0D69D /* Utils */,
+				4223AC842AB882EC0028BAAC /* Models */,
+				42D75AB32AB24FB500E6BA61 /* Main.storyboard */,
+				42D75AB62AB24FB800E6BA61 /* Assets.xcassets */,
+				42D75AB82AB24FB800E6BA61 /* LaunchScreen.storyboard */,
+			);
+			path = MetalSplat;
+			sourceTree = "<group>";
+		};
+		42F4B0452AB602F000C0D69D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				424365292AB4E8BC00C3EF55 /* splat_utils.mm */,
+				421343282AB77ECF00DDA3A2 /* DragHelper.swift */,
+				42D75AC22AB3485500E6BA61 /* MetalBuffer.swift */,
+				42F4B04A2AB6036400C0D69D /* Metal+Extensions.swift */,
+				42F4B0462AB6030D00C0D69D /* ARBackgroundRenderer.swift */,
+				42F4B0472AB6030E00C0D69D /* ARPerspectiveCamera.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42D75AA62AB24FB500E6BA61 /* MetalSplat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42D75ABD2AB24FB800E6BA61 /* Build configuration list for PBXNativeTarget "MetalSplat" */;
+			buildPhases = (
+				42D75AA32AB24FB500E6BA61 /* Sources */,
+				42D75AA42AB24FB500E6BA61 /* Frameworks */,
+				42D75AA52AB24FB500E6BA61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetalSplat;
+			packageProductDependencies = (
+				4243652C2AB5021500C3EF55 /* Satin */,
+				4243652E2AB5021500C3EF55 /* SatinCore */,
+				424365332AB503E500C3EF55 /* Forge */,
+			);
+			productName = MetalSplat;
+			productReference = 42D75AA72AB24FB500E6BA61 /* MetalSplat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42D75A9F2AB24FB500E6BA61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					42D75AA62AB24FB500E6BA61 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 42D75AA22AB24FB500E6BA61 /* Build configuration list for PBXProject "MetalSplat" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42D75A9E2AB24FB500E6BA61;
+			packageReferences = (
+				4243652B2AB5021500C3EF55 /* XCRemoteSwiftPackageReference "Satin" */,
+				424365322AB503E500C3EF55 /* XCRemoteSwiftPackageReference "Forge" */,
+			);
+			productRefGroup = 42D75AA82AB24FB500E6BA61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42D75AA62AB24FB500E6BA61 /* MetalSplat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42D75AA52AB24FB500E6BA61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F4B04D2AB604C500C0D69D /* Assets in Resources */,
+				4263EA7C2AB8AD90001EE430 /* mic_60k.ply in Resources */,
+				42D75ABA2AB24FB800E6BA61 /* LaunchScreen.storyboard in Resources */,
+				42D75AB72AB24FB800E6BA61 /* Assets.xcassets in Resources */,
+				429289BF2AB9097200318B9C /* lego_60k.ply in Resources */,
+				42D75AB52AB24FB500E6BA61 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42D75AA32AB24FB500E6BA61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F4B0442AB602A700C0D69D /* MainViewController.swift in Sources */,
+				4223AC862AB8831B0028BAAC /* Models.swift in Sources */,
+				42F4B0492AB6030E00C0D69D /* ARPerspectiveCamera.swift in Sources */,
+				42F4B04F2AB60F5300C0D69D /* ARSplatView.swift in Sources */,
+				42D75AAB2AB24FB500E6BA61 /* AppDelegate.swift in Sources */,
+				4243652A2AB4E8BC00C3EF55 /* splat_utils.mm in Sources */,
+				421343292AB77ECF00DDA3A2 /* DragHelper.swift in Sources */,
+				424E67752AB495E0007DE614 /* SplatShaders.metal in Sources */,
+				42F4B0482AB6030E00C0D69D /* ARBackgroundRenderer.swift in Sources */,
+				42F4B04B2AB6036400C0D69D /* Metal+Extensions.swift in Sources */,
+				424365312AB502F400C3EF55 /* SplatSimpleView.swift in Sources */,
+				42D75AC52AB3499500E6BA61 /* SplatCloud.swift in Sources */,
+				42D75AC32AB3485500E6BA61 /* MetalBuffer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		42D75AB32AB24FB500E6BA61 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42D75AB42AB24FB500E6BA61 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		42D75AB82AB24FB800E6BA61 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42D75AB92AB24FB800E6BA61 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42D75ABB2AB24FB800E6BA61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		42D75ABC2AB24FB800E6BA61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42D75ABE2AB24FB800E6BA61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6DYBCWFUT9;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "AR view";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = metal;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.laan.labs.MetalSplat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(TARGET_NAME)/BridgingHeader.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42D75ABF2AB24FB800E6BA61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6DYBCWFUT9;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "AR view";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = metal;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.laan.labs.MetalSplat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(TARGET_NAME)/BridgingHeader.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42D75AA22AB24FB500E6BA61 /* Build configuration list for PBXProject "MetalSplat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42D75ABB2AB24FB800E6BA61 /* Debug */,
+				42D75ABC2AB24FB800E6BA61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42D75ABD2AB24FB800E6BA61 /* Build configuration list for PBXNativeTarget "MetalSplat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42D75ABE2AB24FB800E6BA61 /* Debug */,
+				42D75ABF2AB24FB800E6BA61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4243652B2AB5021500C3EF55 /* XCRemoteSwiftPackageReference "Satin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Hi-Rez/Satin.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.0.0;
+			};
+		};
+		424365322AB503E500C3EF55 /* XCRemoteSwiftPackageReference "Forge" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Hi-Rez/Forge";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4243652C2AB5021500C3EF55 /* Satin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4243652B2AB5021500C3EF55 /* XCRemoteSwiftPackageReference "Satin" */;
+			productName = Satin;
+		};
+		4243652E2AB5021500C3EF55 /* SatinCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4243652B2AB5021500C3EF55 /* XCRemoteSwiftPackageReference "Satin" */;
+			productName = SatinCore;
+		};
+		424365332AB503E500C3EF55 /* Forge */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 424365322AB503E500C3EF55 /* XCRemoteSwiftPackageReference "Forge" */;
+			productName = Forge;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 42D75A9F2AB24FB500E6BA61 /* Project object */;
+}
