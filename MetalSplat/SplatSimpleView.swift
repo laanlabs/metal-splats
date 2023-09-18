@@ -174,5 +174,5 @@ struct SplatSimpleView: View {
 
 
 #Preview {
-    SplatSimpleView(model: Models.Plush )
+    SplatSimpleView(model: Models.MicLowRes )
 }

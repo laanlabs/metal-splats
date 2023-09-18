@@ -29,7 +29,7 @@ struct ARSplatView: View {
         ForgeView(renderer: ARSplatRenderer(model: model ))
             .ignoresSafeArea()
         
-            .navigationBarBackButtonHidden(true)
+            //.navigationBarBackButtonHidden(true)
             
         
     }

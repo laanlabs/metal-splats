@@ -36,6 +36,7 @@ struct SplatChoiceView: View {
                             Label("Lego", systemImage: "arkit")
                         }
                         
+                        /*
                         NavigationLink(destination: ARSplatView(model: Models.Plush )) {
                             Label("Plush", systemImage: "arkit")
                         }
@@ -47,6 +48,7 @@ struct SplatChoiceView: View {
                         NavigationLink(destination: ARSplatView(model: Models.Drums )) {
                             Label("Drums", systemImage: "arkit")
                         }
+                         */
                     }
                     
                     Section(header: Text("Non-AR Demos")) {
@@ -59,6 +61,11 @@ struct SplatChoiceView: View {
                             Label("Mic - Low Res", systemImage: "cube")
                         }
                         
+                        NavigationLink(destination: SplatSimpleView(model: Models.Lego)) {
+                            Label("Lego", systemImage: "cube")
+                        }
+                        
+                        /*
                         NavigationLink(destination: SplatSimpleView(model: Models.Ship)) {
                             Label("Ship", systemImage: "cube")
                         }
@@ -75,6 +82,7 @@ struct SplatChoiceView: View {
                         NavigationLink(destination: SplatSimpleView(model: Models.Drums)) {
                             Label("Drums", systemImage: "cube")
                         }
+                        */
                         
                         
                         

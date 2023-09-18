@@ -200,7 +200,7 @@ class SplatCloud : Object, Renderable {
         
         var points : [VertexData] = []
             
-        for i in 0..<numPoints {
+        for _ in 0..<numPoints {
             
             let buffer = readData(from: inputStream, maxLength: strideLength)
             
@@ -253,32 +253,6 @@ class SplatCloud : Object, Renderable {
             center.z = attrs.z
             
             
-            // Filter all white
-            /*
-            var rgb : simd_float3 = .one
-            
-            let SH_C0 : Float = 0.28209479177387814;
-            rgb[0] = (0.5 + SH_C0 * attrs.f_dc_0);
-            rgb[1] = (0.5 + SH_C0 * attrs.f_dc_1);
-            rgb[2] = (0.5 + SH_C0 * attrs.f_dc_2);
-            
-            //if simd_length(rgb) > 0.995 {
-            //if simd_length(rgb) > 1.31 {
-            if simd_length(rgb) > 1.275 {
-                continue;
-            }
-            */
-            
-            if i < 10 {
-                print(" ---------")
-                NSLog("%.4f ", attrs.f_rest_0 )
-                NSLog("%.4f ", attrs.f_rest_1 )
-                NSLog("%.4f ", attrs.f_rest_2 )
-                NSLog("%.4f ", attrs.f_rest_8 )
-            }
-            
-            //let dist = simd_length( simd_sub(clip_center, center) )
-            //let dist = simd_length( clip_center - center )
             let dist = simd_length( center )
             
             if model.clipOutsideRadius > 0.001 && dist > model.clipOutsideRadius {
@@ -350,9 +324,7 @@ class SplatCloud : Object, Renderable {
             
             rgba[3] = (1.0 / (1.0 + exp(-attrs.opacity)));
             //rgba[3] = attrs.opacity;
-            
-            //let sh : [Float] = []
-            
+                        
             let splat : Splat = Splat(center: center,
                                       color: rgba,
                                       scale: scales,
@@ -392,7 +364,6 @@ class SplatCloud : Object, Renderable {
                                    label: "indices",
                                    options: MTLResourceOptions.storageModeShared)
         
-        //init_splat_index(self.splat_indices.buffer.contents(), Int32(numPoints))
         
         
         // ========================= //
@@ -448,7 +419,7 @@ class SplatCloud : Object, Renderable {
             
                 let durTotalMs = d1.timeIntervalSinceNow * -1000.0
             
-                NSLog("Sort took %6.1f ms - shader: %.1f ms ,  std::sort %.1f ms", durTotalMs, durComputeMs, durCpuMs )
+                //NSLog("Sort took %6.1f ms - shader: %.1f ms ,  std::sort %.1f ms", durTotalMs, durComputeMs, durCpuMs )
                 
                 
                 self.isSorting = false
