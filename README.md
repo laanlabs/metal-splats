@@ -10,7 +10,8 @@ Based on / inspired by several existing projects:
 - [WebGPU Gaussian Splatting from cvlab-epfl](https://github.com/cvlab-epfl/gaussian-splatting-web) 
 - [MrNeRF gaussian splatting cuda](https://github.com/MrNeRF/gaussian-splatting-cuda)
 
-- Uses [Satin + Forge](https://github.com/Hi-Rez/Satin) for AR + 3d viewer ( by [@rezaali](https://twitter.com/RezaAli) )
+
+Uses [Satin + Forge](https://github.com/Hi-Rez/Satin) for AR + 3d viewer ( by [@rezaali](https://twitter.com/RezaAli) )
 
 
 Only tested on an iPhone 14 Pro. Older phones will probably struggle. You can adjust the render resolution when loading a model by increasing the rendererDownsample to 4x or more on the 'SplatModelInfo' struct. 
@@ -37,7 +38,7 @@ Please be advised that the software in this repository cannot be used for commer
 ## Models Attribution
 Includs two models from the original NeRF synthetic blender dataset 
 
-The renders are from modified blender models located on blendswap.com
-lego by Heinzelnisse (CC-BY-NC): https://www.blendswap.com/blend/11490
-mic by up3d.de (CC-0): https://www.blendswap.com/blend/23295
+The renders are from modified blender models located on blendswap.com:
+- lego by Heinzelnisse (CC-BY-NC): https://www.blendswap.com/blend/11490
+- mic by up3d.de (CC-0): https://www.blendswap.com/blend/23295
 
