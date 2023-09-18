@@ -19,12 +19,13 @@ Only tested on an iPhone 14 Pro. Older phones will probably struggle. You can ad
 
 :warning: This was a quick weekend hack project for educational purposes. As such the code is bad.  
 
+🔹 NOTE: PLY models use [git LFS](https://git-lfs.com/) for file storage 
+
 
 ## Notes / Todos
 - Spherical harmonics are not supported
 - Sorting is done with std::sort on CPU only
-- Use depth matte from LiDAR sensor to occlude splats
- 
+
 
 ## License(s)
 Parts of the code are based on the original Gaussian-Splatting software and is governed by the [Gaussian-Splatting License](https://github.com/graphdeco-inria/gaussian-splatting/blob/main/LICENSE.md), which can be found in the [LICENSE]() file in this repository. The original software was developed by Inria and MPII.
