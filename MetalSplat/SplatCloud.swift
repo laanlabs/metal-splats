@@ -402,22 +402,22 @@ class SplatCloud : Object, Renderable {
             
             isSorting = true
             
-            let d1 = Date()
+            //let d1 = Date()
             
             // ~2 ms
             self.setSplatDepthsComputeShader()
             
-            let durComputeMs = d1.timeIntervalSinceNow * -1000.0
+            //let durComputeMs = d1.timeIntervalSinceNow * -1000.0
             
             //DispatchQueue.global(qos: .userInteractive).async {
                 
             
-                let d2 = Date()
+                //let d2 = Date()
                 
                 self._sortSplatsCpp()
-                let durCpuMs = d2.timeIntervalSinceNow * -1000
+                //let durCpuMs = d2.timeIntervalSinceNow * -1000
             
-                let durTotalMs = d1.timeIntervalSinceNow * -1000.0
+                //let durTotalMs = d1.timeIntervalSinceNow * -1000.0
             
                 //NSLog("Sort took %6.1f ms - shader: %.1f ms ,  std::sort %.1f ms", durTotalMs, durComputeMs, durCpuMs )
                 

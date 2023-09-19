@@ -173,6 +173,6 @@ struct SplatSimpleView: View {
 
 
 
-#Preview {
-    SplatSimpleView(model: Models.MicLowRes )
-}
+//#Preview {
+//    SplatSimpleView(model: Models.MicLowRes )
+//}

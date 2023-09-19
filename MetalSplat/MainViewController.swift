@@ -9,9 +9,9 @@ import Foundation
 import UIKit
 import SwiftUI
 
-#Preview {
-    SplatChoiceView( )
-}
+//#Preview {
+//    SplatChoiceView( )
+//}
 
 struct SplatChoiceView: View {
     
