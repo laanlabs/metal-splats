@@ -33,6 +33,7 @@ Only tested on an iPhone 14 Pro. Older phones will probably struggle. You can ad
 - detect centroids and model extents on load rather than hand specifying
 
 ## Demo Video 
+[Watch on YouTube](https://youtu.be/2th0ejgNu4U) <br>
 [![youtube-link](https://github.com/laanlabs/metal-splats/assets/174185/5b73c660-8466-4b5d-b68d-2a44c0d1aff5)](https://youtu.be/2th0ejgNu4U)
 
 video credit: Nike shoe model from [Alex Carliera](https://twitter.com/alexcarliera)
