@@ -32,6 +32,10 @@ Only tested on an iPhone 14 Pro. Older phones will probably struggle. You can ad
 - GPU sorting 
 - detect centroids and model extents on load rather than hand specifying
 
+## Demo Video 
+[![youtube-link](https://github.com/laanlabs/metal-splats/assets/174185/44d45df9-bd08-43a5-aa5a-4fed43224fca)](https://youtu.be/2th0ejgNu4U)
+
+video credit: Nike shoe model from [Alex Carliera](https://twitter.com/alexcarliera)
 
 ## License(s)
 Parts of the code are based on the original Gaussian-Splatting software and is governed by the [Gaussian-Splatting License](https://github.com/graphdeco-inria/gaussian-splatting/blob/main/LICENSE.md), which can be found in the [LICENSE]() file in this repository. The original software was developed by Inria and MPII.
