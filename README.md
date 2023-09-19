@@ -23,6 +23,7 @@ Only tested on an iPhone 14 Pro. Older phones will probably struggle. You can ad
 
 
 ## Notes / Todos
+- Does not use a tile based renderer, just basic quad rasterization
 - Spherical harmonics are not supported
 - Sorting is done with std::sort on CPU only
 
