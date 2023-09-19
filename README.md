@@ -34,10 +34,19 @@ Please be advised that the software in this repository cannot be used for commer
 
 [Satin + Forge](https://github.com/Hi-Rez/Satin) are released under the MIT license. See [LICENSE](https://github.com/Hi-Rez/Satin/blob/master/LICENSE) for details. 
 
+## Train your own model 
+There are several blog posts on how to train your own models from a set of images. 
+The output PLY model is what you want to keep ( e.g. 'iteration_30000/point_cloud.ply' ) 
+The included models were trained on google colab with an A100 GPU. 
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1I8T2zlE7fQK06uNfezr4tOa_5xSq9XIg?usp=sharing) 
+
+
+
 
 
 ## Models Attribution
-Includs two models from the original NeRF synthetic blender dataset 
+Includes two models from the original NeRF synthetic blender dataset 
 
 The renders are from modified blender models located on blendswap.com:
 - lego by Heinzelnisse (CC-BY-NC): https://www.blendswap.com/blend/11490
