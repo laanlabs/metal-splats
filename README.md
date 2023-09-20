@@ -4,9 +4,10 @@
 
 ## About 
 A buggy + slow AR gaussian splat renderer for iOS + Metal. 
-Based on / inspired by several existing projects:
+Based on several existing projects:
 - [Original Gaussian Splatting Repo](https://github.com/graphdeco-inria/gaussian-splatting/)
 - [Unity Gaussian Splatting](https://github.com/aras-p/UnityGaussianSplatting)
+- [WebGL Gaussian Splats](https://github.com/antimatter15/splat)
 - [WebGPU Gaussian Splatting from cvlab-epfl](https://github.com/cvlab-epfl/gaussian-splatting-web) 
 - [MrNeRF gaussian splatting cuda](https://github.com/MrNeRF/gaussian-splatting-cuda)
 
@@ -19,14 +20,24 @@ Only tested on an iPhone 14 Pro. Older phones will probably struggle. You can ad
 
 :warning: This was a quick weekend hack project for educational purposes. As such the code is bad.  
 
-🔹 NOTE: PLY models use [git LFS](https://git-lfs.com/) for file storage 
+🔹 NOTE: PLY models use [git LFS](https://git-lfs.com/) for file storage. You may need to run ```git lfs pull``` if PLYs are missing
 
 
-## Notes / Todos
+## Notes 
 - Does not use a tile based renderer, just basic quad rasterization
 - Spherical harmonics are not supported
-- Sorting is done with std::sort on CPU only
+- Sorting is done on main thread with std::sort on CPU 
+### Todos
+- fix pan / drag / rotate gesture handling for moving the model - now it's broken
+- snap models to AR planes
+- GPU sorting 
+- detect centroids and model extents on load rather than hand specifying
 
+## Demo Video 
+[Watch on YouTube](https://youtu.be/2th0ejgNu4U) <br>
+[![youtube-link](https://github.com/laanlabs/metal-splats/assets/174185/5b73c660-8466-4b5d-b68d-2a44c0d1aff5)](https://youtu.be/2th0ejgNu4U)
+
+video credit: Nike shoe model from [Alex Carliera](https://twitter.com/alexcarliera)
 
 ## License(s)
 Parts of the code are based on the original Gaussian-Splatting software and is governed by the [Gaussian-Splatting License](https://github.com/graphdeco-inria/gaussian-splatting/blob/main/LICENSE.md), which can be found in the [LICENSE]() file in this repository. The original software was developed by Inria and MPII.
@@ -36,7 +47,7 @@ Please be advised that the software in this repository cannot be used for commer
 [Satin + Forge](https://github.com/Hi-Rez/Satin) are released under the MIT license. See [LICENSE](https://github.com/Hi-Rez/Satin/blob/master/LICENSE) for details. 
 
 ## Train your own model 
-There are several blog posts on how to train your own models from a set of images. 
+There are several [blog posts](https://www.reshot.ai/3d-gaussian-splatting) on how to train your own models from a set of images. 
 The output PLY model is what you want to keep ( e.g. 'iteration_30000/point_cloud.ply' ) 
 The included models were trained on google colab with an A100 GPU. 
 
@@ -47,7 +58,7 @@ The included models were trained on google colab with an A100 GPU.
 
 
 ## Models Attribution
-Includes two models from the original NeRF synthetic blender dataset 
+Includes two models from the NeRF synthetic blender dataset 
 
 The renders are from modified blender models located on blendswap.com:
 - lego by Heinzelnisse (CC-BY-NC): https://www.blendswap.com/blend/11490
