@@ -7,6 +7,7 @@ A buggy + slow AR gaussian splat renderer for iOS + Metal.
 Based on several existing projects:
 - [Original Gaussian Splatting Repo](https://github.com/graphdeco-inria/gaussian-splatting/)
 - [Unity Gaussian Splatting](https://github.com/aras-p/UnityGaussianSplatting)
+- [WebGL Gaussian Splats](https://github.com/antimatter15/splat)
 - [WebGPU Gaussian Splatting from cvlab-epfl](https://github.com/cvlab-epfl/gaussian-splatting-web) 
 - [MrNeRF gaussian splatting cuda](https://github.com/MrNeRF/gaussian-splatting-cuda)
 
