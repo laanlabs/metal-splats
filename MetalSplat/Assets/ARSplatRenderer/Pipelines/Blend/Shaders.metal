@@ -18,13 +18,12 @@ fragment float4 blendFragment
     const float4 bgSample = bgTex.sample( s, in.uv );
  
     float4 contentSample = contentTex.sample( s, in.uv );
-
-    // bit softer AR edges
-    contentSample.a = pow(contentSample.a, 3);
     
-    float4 color = mix(bgSample, contentSample, contentSample.a);
+    float a = contentSample.a;
+    a = pow(a, 1.2);
+    float3 color = (1.0 - a) * bgSample.rgb + contentSample.rgb;
+    return float4(color, 1.0);
     
-    return color;
     
 }
 
