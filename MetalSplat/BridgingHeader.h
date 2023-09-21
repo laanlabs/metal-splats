@@ -8,7 +8,10 @@
 #import "ShaderTypes.h"
 
 
-void sort_splats( void * splat_buffer, 
+#import "SplatCloudC.h"
+
+
+void sort_splats( void * splat_buffer,
                   void * temp_splat_buffer,
                   void * splat_index_buffer, 
                   Uniforms uniforms,
