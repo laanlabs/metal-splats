@@ -189,9 +189,9 @@ int loadPly(std::string filename,
 
         uint64_t code = 0;
         for (int j = 0; j < 21; j++) {
-            code |= ((uint64_t(xyz[0] & (1 << j))) << (2 * j + 0));
-            code |= ((uint64_t(xyz[1] & (1 << j))) << (2 * j + 1));
-            code |= ((uint64_t(xyz[2] & (1 << j))) << (2 * j + 2));
+            code |= ((uint64_t(xyz[0] & (1 << j))) << (3 * j + 0));
+            code |= ((uint64_t(xyz[1] & (1 << j))) << (3 * j + 1));
+            code |= ((uint64_t(xyz[2] & (1 << j))) << (3 * j + 2));
         }
 
         mapp[i].first = code;
